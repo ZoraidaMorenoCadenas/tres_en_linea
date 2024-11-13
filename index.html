@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="tictactoe.js" defer></script>
+    <script src="index.js" defer></script>
+
+    <title>❌⭕ Tres en ratlla</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen bg-slate-400"
+  >
+    <!-- Taulell del joc -->
+    <div class="h-[200px]">
+      <h1 class="text-6xl font-bold text-center text-gray-600 mt-30">
+        TRES EN RAYA
+      </h1>
+      <h2
+        id="winMessage"
+        class="hidden text-6xl font-bold items-center justify-center py-4 px-8 rounded-xl mt-10"
+      ></h2>
+    </div>
+    <div id="game" class="relative grid grid-cols-3 w-100 mx-auto mt-20">
+      <div id="0" class="cell cell-board cell-board-border"></div>
+      <div id="1" class="cell cell-board cell-board-border"></div>
+      <div id="2" class="cell cell-board border-b-4"></div>
+      <div id="3" class="cell cell-board cell-board-border"></div>
+      <div id="4" class="cell cell-board cell-board-border"></div>
+      <div id="5" class="cell cell-board border-b-4"></div>
+      <div id="6" class="cell cell-board border-r-4"></div>
+      <div id="7" class="cell cell-board border-r-4"></div>
+      <div id="8" class="cell cell-board"></div>
+      <!-- Missatge de final de partida -->
+      <h2
+        id="gameOverMessage"
+        class="absolute inset-0 z-10 text-red-600 hidden justify-center items-center text-6xl font-bold py-4 px-8 bg-white bg-opacity-80 rounded-xl"
+      ></h2>
+    </div>
+    <button
+      id="resetButton"
+      class="text-2xl border-2 border-gray-500 mt-20 px-8 py-4 bg-white-500 text-gray-700 rounded hover:bg-green-600 mx-auto"
+    >
+      Reiniciar
+    </button>
+    <!-- <div class="game-over">
+      <span class="game-over-text"></span>
+    </div> -->
+  </body>
+</html>

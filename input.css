@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .card {
+  } */
+  .x::after {
+    content: "❌";
+  }
+  .o::after {
+    content: "⭕";
+  }
+  .cell-board {
+    @apply flex justify-center items-center border-white w-40 h-40 text-4xl cursor-pointer
+  }
+  .cell-board-border {
+    @apply border-b-4 border-r-4
+  }
+  
+}
+
+
+/* Board style */
+
+/* Pseudo elements */
+
+/* Tile style */
+
+/* Game over window */
